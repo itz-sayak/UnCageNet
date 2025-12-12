@@ -1,0 +1,12 @@
+# Ignore large model checkpoints and outputs
+**/checkpoints/
+**/checkpoints/*
+*.pth
+*.pt
+predictions_image/
+*/pose_results*/
+*/results*/
+__pycache__/
+*.egg-info/
+*.log
+.GitHubToken
