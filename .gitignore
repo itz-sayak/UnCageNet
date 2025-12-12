@@ -9,4 +9,3 @@ predictions_image/
 __pycache__/
 *.egg-info/
 *.log
-.GitHubToken
