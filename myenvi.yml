@@ -1,0 +1,43 @@
+name: myenvi
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.12
+  - pip
+  - numpy=2.0.1
+  - pytorch-cuda=12.4
+  - torchaudio=2.5.1
+  - ipython
+  - jupyter
+  - jupyterlab
+  - notebook
+  - matplotlib-inline
+  - pillow
+  - requests
+  - six
+  - typing_extensions
+  - traitlets
+  - pyyaml
+  - psutil
+  - scipy
+  - ffmpeg
+  - openssl
+  - zlib
+  - libjpeg-turbo
+  - libpng
+  - libtiff
+  - xz
+  - zstd
+  - libwebp
+  - libwebp-base
+  - pip:
+      - ipywidgets
+      - anyio
+      - nest-asyncio
+      - pyzmq
+      - packaging
+      - tqdm
+      - torchvision
