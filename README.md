@@ -234,3 +234,13 @@ UnCageNet/
 - **Out of Memory Errors**: Reduce batch size or image resolution
 - **Missing Models**: Ensure all model checkpoints are downloaded and paths are correct
 - **Conda Environment Issues**: Verify that all required environments are created and activated correctly
+
+```bibtex
+@article{dutta2025uncagenet,
+  title   = {UnCageNet: Tracking and Pose Estimation of Caged Animal},
+  author  = {Dutta, Sayak and Katti, Harish and Verma, Shashikant and Raman, Shanmuganathan},
+  journal = {arXiv preprint arXiv:2512.07712},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2512.07712}
+}
+
