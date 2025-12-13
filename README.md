@@ -5,6 +5,22 @@ UnCageNet is an animal cage removal pipeline that combines mask prediction, inpa
 ## Models
 The models are in  https://huggingface.co/sayak-iit/UnCageNet
 
+## Setting up `crfill/` and `ViTPose/`
+1. **CR-Fill (Inpainting)**
+    - Repository: [CR-Fill (Official)](https://github.com/lyndonzheng/CR-Fill)
+    - To clone into the `crfill/` directory:
+      ```bash
+      git clone https://github.com/lyndonzheng/CR-Fill.git crfill
+      ```
+    - Follow the installation instructions in the CR-Fill repository to install any additional dependencies.
+2. **ViTPose (Pose Estimation)**
+    - Repository: [ViTPose (Official)](https://github.com/ViTAE-Transformer/ViTPose)
+    - To clone into the `ViTPose/` directory:
+      ```bash
+      git clone https://github.com/ViTAE-Transformer/ViTPose.git ViTPose
+      ```
+    - Follow the installation instructions in the ViTPose repository to install any additional dependencies.
+
 ## Pipeline Overview
 
 The complete pipeline consists of three main steps:
