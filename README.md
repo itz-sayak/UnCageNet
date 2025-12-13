@@ -2,6 +2,9 @@
 
 UnCageNet is an animal cage removal pipeline that combines mask prediction, inpainting, and pose estimation to process images and videos of caged animals.
 
+##Models
+The models are in  https://huggingface.co/sayak-iit/UnCageNet
+
 ## Pipeline Overview
 
 The complete pipeline consists of three main steps:
