@@ -12,12 +12,24 @@ The complete pipeline consists of three main steps:
 
 ## Prerequisites
 
-- Conda environment with required dependencies
+- Conda environments with required dependencies:
+  - `deepfill` environment for mask prediction and inpainting
+  - `myenvi` environment for pose estimation (or create from `myenvi.yml`)
 - CUDA-enabled GPU (recommended)
 - Pre-trained models:
   - Model for mask prediction (e.g., `model.pth`)
-  - CR-Fill inpainting model
+  - CR-Fill inpainting model (place in `crfill/` directory)
   - ViTPose checkpoint for animal pose estimation (e.g., `ap10k.pth`)
+
+### Environment Setup
+
+Create the required conda environment:
+
+```bash
+conda env create -f myenvi.yml
+```
+
+**Note:** The `crfill/` and `ViTPose/` directories should contain the respective inpainting and pose estimation code. These are typically submodules or separate repositories that need to be set up separately.
 
 ## Running the Pipeline
 
@@ -113,7 +125,7 @@ cd ..
 Estimate animal poses on the inpainted images:
 
 ```bash
-conda activate myenv
+conda activate myenvi
 
 python infer_frame.py \
     --cfg configs/animal/2d_kpt_sview_rgb_img/topdown_heatmap/ap10k/ViTPose_large_ap10k_256x192.py \
@@ -167,7 +179,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py \
 cd ..
 
 # Step 3: Estimate poses
-conda activate myenv
+conda activate myenvi
 CUDA_VISIBLE_DEVICES=0 python infer_frame.py \
     --cfg configs/animal/2d_kpt_sview_rgb_img/topdown_heatmap/ap10k/ViTPose_large_ap10k_256x192.py \
     --checkpoint checkpoints/ap10k.pth \
