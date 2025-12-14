@@ -238,7 +238,7 @@ UnCageNet/
 - **Conda Environment Issues**: Verify that all required environments are created and activated correctly
 
 ```bibtex
-@article{sayak2025uncagenet,
+@article{dutta2025uncagenet,
   title   = {UnCageNet: Tracking and Pose Estimation of Caged Animal},
   author  = {Dutta, Sayak and Katti, Harish and Verma, Shashikant and Raman, Shanmuganathan},
   journal = {arXiv preprint arXiv:2512.07712},
