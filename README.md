@@ -1,4 +1,4 @@
-Paper: https://arxiv.org/abs/2512.07712
+Paper: https://arxiv.org/abs/2512.07712v2
 
 # UnCageNet
 
@@ -12,7 +12,7 @@ The models are in  https://huggingface.co/sayak-iit/UnCageNet
     - Repository: [CR-Fill (Official)](https://github.com/lyndonzheng/CR-Fill)
     - To clone into the `crfill/` directory:
       ```bash
-      git clone https://github.com/lyndonzheng/CR-Fill.git crfill
+      git clone https://github.com/zengxianyu/crfill
       ```
     - Follow the installation instructions in the CR-Fill repository to install any additional dependencies.
 2. **ViTPose (Pose Estimation)**
